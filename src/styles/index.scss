@@ -1,0 +1,43 @@
+@import "./lottie.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Montserrat", sans-serif;
+  background: #24292f;
+  color: white;
+}
+
+.container {
+  scroll-snap-type: y mandatory;
+  max-height: 100vh;
+  scroll-snap-stop: always;
+  overflow-y: scroll;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  // scroll-snap-align: center;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 70vw;
+  transform: translate(-50%, -50%);
+  transition: opacity 1s ease-in-out;
+}
