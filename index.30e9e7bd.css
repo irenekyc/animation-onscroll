@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Montserrat", sans-serif;
+  background: #24292f;
+  color: white;
+}
+
+.container {
+  scroll-snap-type: y mandatory;
+  max-height: 100vh;
+  scroll-snap-stop: always;
+  overflow-y: scroll;
+}
+
+section {
+  border: 1px solid white;
+  width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: center;
+}
+/*# sourceMappingURL=index.30e9e7bd.css.map */
