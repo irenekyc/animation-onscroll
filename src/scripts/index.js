@@ -2,6 +2,7 @@ import {
   carAnimation,
   packingAnimation,
   movingCircleAnimation,
+  rocketAnimation,
 } from "./animation";
 import { Controller, Scene } from "scrollmagic";
 
@@ -53,5 +54,10 @@ addScene("packing-section", {
 
 addScene("moving-circle-section", {
   animation: movingCircleAnimation,
+  animationDuration: 2000,
+});
+
+addScene("rocket-section", {
+  animation: rocketAnimation,
   animationDuration: 2000,
 });

@@ -2,6 +2,7 @@ import bodymovin from "lottie-web";
 import carAnimationData from "../assets/animation-data/car-white.json";
 import packingAnimationData from "../assets/animation-data/packing.json";
 import movingCircleAnimationData from "../assets/animation-data/moving-circle.json";
+import rocketAnimationData from "../assets/animation-data/rocket.json";
 
 export const carAnimation = bodymovin.loadAnimation({
   container: document.getElementById("car-lottie"),
@@ -25,4 +26,12 @@ export const movingCircleAnimation = bodymovin.loadAnimation({
   loop: false,
   renderer: "svg",
   animationData: movingCircleAnimationData,
+});
+
+export const rocketAnimation = bodymovin.loadAnimation({
+  container: document.getElementById("rocket-lottie"),
+  autoplay: false,
+  loop: false,
+  renderer: "svg",
+  animationData: rocketAnimationData,
 });
